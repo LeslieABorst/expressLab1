@@ -1,0 +1,16 @@
+<div class="form">
+    <h2>Shopping List</h2>
+    <form ng-submit="$ctrl.postData($ctrl.newItem);">
+        <input class="new" type="text" placeholder="Product" ng-model="$ctrl.newItem.product">
+        <input class="new" type="text" placeholder="Price" ng-model="$ctrl.newItem.price">
+        <input class="new" type="text" placeholder="Quantity" ng-model="$ctrl.newItem.quantity">
+        <button>Add New Item</button>
+    </form>
+
+    <section ng-repeat="item in $ctrl.shoppingcart">
+        <input type="text" ng-blur="$ctrl.updateData(item);" ng-model="item.product">
+        <input type="text" ng-blur="$ctrl.updateData(item);" ng-model="item.price">
+        <input type="text" ng-blur="$ctrl.updateData(item);" ng-model="item.quantity">
+        <button ng-click="$ctrl.deleteData(item.id);">X</button>
+    </section>
+</div>

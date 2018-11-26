@@ -1,0 +1,29 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: violet;
+    margin-top: 5%;
+    box-shadow: 3px 3px 5px darkgrey;
+}
+
+.new {
+    border: none;
+    border-bottom: solid 1px grey;
+}
+
+form {
+    padding: 1%;
+    margin: 1%;
+}
+
+section {
+    padding: 1%;
+    margin: 1%;
+}
